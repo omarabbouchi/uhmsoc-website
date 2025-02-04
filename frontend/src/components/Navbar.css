@@ -1,0 +1,187 @@
+/* navbar container */
+.navbar-container {
+  background-color: #990000; /* Crimson red */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Sticks to the top */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar content layout */
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo-img {
+  height: 50px; 
+}
+
+/*navbar links*/
+.navbar-links {
+  display: flex;
+  gap: 20px; /*space b/w links*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #ffcc00; /*highlight effect*/
+}
+
+/* CTA button */
+.navbar-button {
+  background-color: #ffffff;
+  color: #990000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: white;
+  color: #990000;
+}
+
+.navbar-custom {
+    background-color: #A60F2D !important; /* UH Crimson */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #99CCFF !important; /* Light blue on hover */
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.login-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
+    padding: 0.375rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #A60F2D !important;
+}
+
+/* Add these styles to your existing Navbar.css */
+.navbar-brand span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: white !important;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover span {
+    color: #99CCFF !important;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+/* Add or modify these styles */
+.navbar-custom .container {
+    padding-left: 0;  /* Remove left padding */
+    margin-left: 0;   /* Remove left margin */
+}
+
+.navbar-brand {
+    padding-left: 15px;  /* Add a small padding to prevent sticking to the edge */
+}
+
+/* Optional: if you want to maintain some space on the right side */
+.navbar-custom .container {
+    max-width: 100%;  /* Allow container to take full width */
+    padding-right: 15px;  /* Keep some padding on the right */
+}
+
+.navbar {
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem !important;
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.btn-link {
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #A60F2D;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        margin-bottom: 1rem;
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255,255,255,0.5) !important;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+}
